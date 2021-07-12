@@ -1,4 +1,5 @@
 
+//click event listener for submit button
 let submit=document.querySelector(".submit-btn")
 submit.addEventListener("click", (event)=>{
     
@@ -14,6 +15,7 @@ submit.addEventListener("click", (event)=>{
     let repoListDiv=document.querySelector(".repoListDiv")
     repoListDiv.append(accordion)
 
+    //fetch call to api, to get repository details
     let repoFunction = async()=>{
         try{
             let userName=document.querySelector(".userName").value
@@ -23,6 +25,7 @@ submit.addEventListener("click", (event)=>{
             let repoListRaw=await repos;
             let repoList=await repoListRaw.json();
 
+            //repository display logic
             let unitMap=[{1:"One"},{2:"two"},{3:"Three"},{4:"Four"},{5:"Five"},{6:"Six"},{7:"Seven"},{8:"Eight"},{9:"Nine"}]
             let tensDigitMap=[{10:"Ten"},{11:"Eleven"},{12:"Twelve"},{13:"Thirteen"},{14:"Fourteen"},{15:"fifteen"},{16:"Sixteen"},{17:"Seventeen"},{18:"Eighteen"},{19:"Ninteen"}]
             let twoDigitMap=[{20:"Twenty"},{30:"Thirty"},{40:"Fourty"},{50:"Fifty"},{60:"Sixty"},{70:"Seventy"},{80:"Eighty"},{90:"Ninty"}]
