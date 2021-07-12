@@ -1,0 +1,25 @@
+.app-header{
+    background-color: rgb(34, 27, 46);
+    padding: 1.6em;
+}
+
+.app-title{
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-size: larger;
+    padding-bottom: 1em;
+}
+
+.accordion, .accordion-item{
+    background-color: rgb(142, 240, 240);
+    color: rgb(147, 34, 247);
+}
+
+.user_repos{
+    background-image: linear-gradient(rgb(150, 150, 243),grey);
+    min-height: 100vh;
+}
+
+.accordion-header .accordion-button{
+    background-color: rgb(195, 245, 121);
+}
